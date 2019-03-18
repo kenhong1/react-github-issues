@@ -29,8 +29,9 @@ class App extends Component {
 
   render() {
     return (
-    <BrowserRouter>
+      <BrowserRouter>
       <div className="App">
+      
         <nav>
           <Link to ="/"> Home </Link> 
         </nav>

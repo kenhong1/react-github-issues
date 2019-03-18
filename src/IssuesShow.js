@@ -1,4 +1,5 @@
 import React from "react"; 
+import ReactMarkdown from 'react-markdown'; 
 
 const IssuesShow = (props) => {
    let issue = props.issues.find((issue) => {
@@ -11,6 +12,7 @@ const IssuesShow = (props) => {
    if(issue) {
       return(
          <div>
+            <ReactMarkdown source={props.markdownContent} />
             <h3> {issue.id} </h3>
             <h2> {issue.title}</h2>
             <p> {issue.body}</p>
