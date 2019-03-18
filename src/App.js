@@ -5,8 +5,10 @@ import axios from "axios";
 import {BrowserRouter, Route, Link} from "react-router-dom"
 import './App.css';
 import IssuesShow from './IssuesShow';
+// import logo from './logo.png';  
 
 
+// console.log(logo)
 
 class App extends Component {
   
@@ -31,7 +33,6 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div className="App">
-      
         <nav>
           <Link to ="/"> Home </Link> 
         </nav>

@@ -11,7 +11,7 @@ const Issues = (props) => {
       const issues = props.issues.map((issue, index) => (
             <div key={index}>
             <ReactMarkdown source={props.markdownContent} />
-               <h3> <Link to={`/Issue/${issue.id}`}> link</Link> {issue.id} {" "} {issue.title}  </h3>
+               <h3> <Link to={`/Issue/${issue.id}`}>{issue.id} {" "} {issue.title}  </Link>  </h3>
                <p>  {issue.body}  </p>
             </div>
          ))

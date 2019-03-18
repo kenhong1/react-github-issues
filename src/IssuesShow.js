@@ -7,12 +7,12 @@ const IssuesShow = (props) => {
    })
    // console.log('props are', props)
    // console.log(props.match)
-
+   
    
    if(issue) {
       return(
          <div>
-            <ReactMarkdown source={props.markdownContent} />
+         <ReactMarkdown source={issue.body} />
             <h3> {issue.id} </h3>
             <h2> {issue.title}</h2>
             <p> {issue.body}</p>
@@ -20,7 +20,7 @@ const IssuesShow = (props) => {
       )
       } else {
          return (
-            <h1>laoding</h1>
+            <h1>loading</h1>
          )
       }
 
